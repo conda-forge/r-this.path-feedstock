@@ -1,4 +1,4 @@
-{% set version = '1.0.1' %}
+{% set version = "1.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/this.path_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/this.path/this.path_{{ version }}.tar.gz
-  sha256: 5469a1deff793b0f0d1866322cb4bde56ca83865f42d64001027d528a82e7f2f
+  sha256: 72753330f2ee074c4e828c59ad86db19c7842c5ff33228d8bdc085dd9846eb57
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   rpaths:
     - lib/R/lib/
@@ -46,7 +46,7 @@ about:
   summary: Determine the full path of the executing script.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
