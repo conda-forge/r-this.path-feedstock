@@ -3,6 +3,7 @@ About r-this.path-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-this.path-feedstock/blob/main/LICENSE.txt)
 
+
 About r-this.path
 -----------------
 
@@ -11,6 +12,7 @@ Home: https://github.com/ArcadeAntics/this.path
 Package license: MIT
 
 Summary: Determine the full path of the executing script.
+
 About r-this.path
 -----------------
 
